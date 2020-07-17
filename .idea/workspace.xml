@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="495f5993-8441-4028-9c07-a3be510e2ee4" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DCServer.iml" afterPath="$PROJECT_DIR$/.idea/DCServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DCServer/settings.py" afterPath="$PROJECT_DIR$/DCServer/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/device/models.py" afterPath="$PROJECT_DIR$/device/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/device/serializers.py" afterPath="$PROJECT_DIR$/device/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/views.py" afterPath="$PROJECT_DIR$/user/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/device/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user/migrations/0003_auto_20200717_1313.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
