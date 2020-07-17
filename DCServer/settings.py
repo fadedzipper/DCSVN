@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dcs06',
         'USER':'root',
-        'PASSWORD':'wsad123456',
+        'PASSWORD':'root',
         "POST":'3306',
         "HOST":'127.0.0.1'
     }
@@ -161,7 +161,7 @@ REST_FRAMEWORK = {
     # 设置全局默认的分页类
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 设置默认分页大小
-    'PAGE_SIZE': 2,
+    'PAGE_SIZE': 10,
     # 设置认证类(默认)(以下认证，有一个满足，即为登陆成功)
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
