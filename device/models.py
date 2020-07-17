@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-# from net.models import Net
+from net.models import Net
 class Device(models.Model):
 
     STATUS = ((0,'离线'), (1,'在线'))
@@ -13,5 +13,5 @@ class Device(models.Model):
     Longitude = models.CharField(max_length=20)
     Latitude = models.CharField(max_length=20)
     info = models.CharField(max_length= 200)
-    #   net = models.ForeignKey(Net, on_delete=models.CASCADE)
+    net = models.ForeignKey(Net, on_delete=models.CASCADE)
 

@@ -53,6 +53,7 @@ class UserViewset(viewsets.ModelViewSet):
     def list(self, request, *args, **kwargs):
         """
         获得用户列表 
+        
         #### 参数说明
         | 字段名称 | 描述 | 必须 | 类型 |
         | -- | --  | -- | -- |

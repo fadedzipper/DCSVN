@@ -7,16 +7,15 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 class UserSerializer(serializers.ModelSerializer):
 
     date_joined = serializers.DateTimeField(format("%Y-%m-%d %H:%M:%S"),input_formats=["%Y-%m-%d %H:%M:%S", ],read_only=True)
-    gender = serializers.SerializerMethodField()
+    birth = serializers.DateTimeField(format("%Y-%m-%d"),input_formats=["%Y-%m-%d", ])
 
     class Meta:
         model = models.User
-        fields = ['id','username','num','last_name','email','tel','gender',\
-                'info','last_login','is_active','date_joined','password']
+        fields = ['id','name','num','username','email','phone','gender',\
+                'info','last_login','is_active','date_joined','password', 'birth']
 
         extra_kwargs = {
             'last_login':{'read_only':True,"required":False},
-            'date_joined': {'read_only': True, "required": False},
             'password':{'write_only':True}
         }
 
@@ -45,21 +44,28 @@ class UserSerializer(serializers.ModelSerializer):
         return data
 
 
-    def get_gender(self,obj):
-        # if obj.gender ==1 :
-        #     return "男"
-        # return "女"
 
-        return obj.get_gender_display()
+    def get_gender(self,obj):
+        super().get_value("gender")
+
+
+
+    def get_gender(self,obj):
+         if obj.gender == 1 :
+             return "男"
+         return "女"
+
 
 
 
 class UserUpdateSerializer(UserSerializer):
 
     gender = serializers.IntegerField()
+    birth = serializers.DateTimeField(format("%Y-%m-%d"),input_formats=["%Y-%m-%d", ])
     class Meta:
         model = models.User
-        fields = ['last_name','tel','gender','info']
+        fields = ['id','name','num','username','email','phone','gender', \
+                  'info','is_active', 'birth']
 
 
 

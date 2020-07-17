@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'DCServer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dcs06',
+        'NAME': 'dcs',
         'USER':'root',
         'PASSWORD':'root',
         "POST":'3306',
