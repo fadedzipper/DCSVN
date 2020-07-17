@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'user',
     'device',
     'group',
-    'permission'
+    'permission',
+    'net'
 ]
 
 MIDDLEWARE = [
