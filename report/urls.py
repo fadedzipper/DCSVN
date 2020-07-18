@@ -3,7 +3,7 @@ from rest_framework import  routers
 from . import  views
 
 router = routers.SimpleRouter()
-router.register('',views.UserViewset)
+router.register('',views.ReportViewSet)
 
 urlpatterns = [
     # path('t/users/',views.UserViewset.as_view({'get':'list','post':'create'}))
