@@ -44,17 +44,11 @@ class UserSerializer(serializers.ModelSerializer):
         return data
 
 
-
-    def get_gender(self,obj):
-        super().get_value("gender")
-
-
-
-    def get_gender(self,obj):
+    def get_gender(self, obj):
          if obj.gender == 1 :
              return "男"
-         return "女"
 
+         return "女"
 
 
 

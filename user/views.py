@@ -43,7 +43,6 @@ class UserViewset(viewsets.ModelViewSet):
 
     def get_serializer_class(self):
 
-        print(self.action)
         if self.action == "update" or self.action== "partial_update":
             return serializers.UserUpdateSerializer
 

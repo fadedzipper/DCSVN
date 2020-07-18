@@ -20,8 +20,7 @@ class MyPaination(PageNumberPagination):
 class DeviceFilterSet(FilterSet):
     class Meta:
         model = models.Device
-        fields = {
-        }
+        fields = {}
 
 class DeviceViewset(viewsets.ModelViewSet):
 

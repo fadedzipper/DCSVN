@@ -49,6 +49,7 @@ urlpatterns = [
     # path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('login',LoginView.as_view(),name='login'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('devices', include('device.urls')),
+    path('devices/', include('device.urls')),
+    path('nets/', include('net.urls')),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
